@@ -2,10 +2,6 @@ cmake_minimum_required(VERSION 3.5)
 
 project(abb_irb120_support)
 
-find_package(ament_cmake REQUIRED)
-
-ament_package()
-
 # if (CATKIN_ENABLE_TESTING)
 #   find_package(roslaunch REQUIRED)
 #   roslaunch_add_file_check(tests/roslaunch_test.xml)
