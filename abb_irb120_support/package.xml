@@ -40,7 +40,7 @@
   <url type="bugtracker">https://github.com/ros-industrial/abb_experimental/issues</url>
   <url type="repository">https://github.com/ros-industrial/abb_experimental</url>
 
-  <buildtool_depend>catkin</buildtool_depend>
+  <buildtool_depend>ament_cmake</buildtool_depend>
 
   <test_depend version_gte="1.9.55">roslaunch</test_depend>
 
@@ -53,5 +53,6 @@
 
   <export>
     <architecture_independent/>
+    <build_type>ament_cmake</build_type>
   </export>
 </package>
