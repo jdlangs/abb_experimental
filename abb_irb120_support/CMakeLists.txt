@@ -7,5 +7,11 @@ project(abb_irb120_support)
 #   roslaunch_add_file_check(tests/roslaunch_test.xml)
 # endif()
 
-install(DIRECTORY config launch meshes urdf
-  DESTINATION share/${PROJECT_NAME})
+file(WRITE ${CMAKE_CURRENT_BINARY_DIR}/share/ament_index/resource_index/packages/${PROJECT_NAME} "")
+install(
+  FILES ${CMAKE_CURRENT_BINARY_DIR}/share/ament_index/resource_index/packages/${PROJECT_NAME}
+  DESTINATION share/ament_index/resource_index/packages
+)
+
+install(DIRECTORY config launch meshes urdf DESTINATION share/${PROJECT_NAME})
+install(FILES package.xml DESTINATION share/${PROJECT_NAME})
